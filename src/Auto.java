@@ -3,7 +3,7 @@ public class Auto {
     public String model;
     public  int rok;
     public int przebieg;
-    public String wlasciciel
+    public String wlasciciel;
 
     public void jedz() {
         System.out.println("Jedz!");
