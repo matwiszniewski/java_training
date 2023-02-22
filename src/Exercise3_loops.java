@@ -9,6 +9,7 @@ public class Exercise3_loops {
         {
             System.out.println(i);
         }
+//inna metoda
 
         for (int j=1; j<100; j++) {
             if (j%3==0) {
@@ -17,7 +18,7 @@ public class Exercise3_loops {
         }
 
 // odwracanie tablicy /nowa tablica
-        int[] tablica = new int[] {1,3,5};
+        int[] tablica = new int[] {1,3,5,8,4,4,8,2,1};
         System.out.println(Arrays.toString(tablica));
 
         for (int i = 0; i < tablica.length; i++) {
@@ -41,7 +42,9 @@ public class Exercise3_loops {
             tmp = tablica[i];
             tablica[i] = tablica[l-1-i];
             tablica[l-1-i]=tmp;
+            System.out.println("Iteracja numer " + i);
         }
+
         System.out.print("Po odwróceniu: ");
         for (int i: tablica) System.out.print(i+" ");
 
