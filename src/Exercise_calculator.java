@@ -12,7 +12,7 @@ public class Exercise_calculator {
         System.out.println("Prosze podaj druga liczbe");
         int secondNumber = scanner2.nextInt();
 
-        //mathematical operations
+/*        //mathematical operations
         int addition = firstNumber + secondNumber;
         int subtraction = firstNumber - secondNumber;
         int multiplication = firstNumber * secondNumber;
@@ -24,5 +24,18 @@ public class Exercise_calculator {
         System.out.println("Wyniki mnozenia "+ multiplication);
         System.out.println("Wyniki dzielenia "+ division);
         System.out.println("Wyniki modulo "+ mod);
+*/
+        //mathematical operations
+
+        Calculator dzialanie = new Calculator();
+
+        dzialanie.addition(firstNumber,secondNumber);
+        dzialanie.subtraction(firstNumber,secondNumber);
+        dzialanie.multiplication(firstNumber,secondNumber);
+        dzialanie.division(firstNumber,secondNumber);
+        dzialanie.modulo(firstNumber,secondNumber);
+
+
+
     }
 }
