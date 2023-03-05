@@ -1,5 +1,7 @@
-public class Exercise4_obiekty {
+public class StudentChecker {
     public static void main(String[] args) {
+
+        String uczelnia = Student.nazwaUczelni;
 
         Student student_1 = new Student();
         student_1.imie = "Mateusz";
