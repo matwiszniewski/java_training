@@ -6,7 +6,7 @@ public class Student {
     public String email;
     public int numerIndeksu;
 
-    public static String nazwaUczelni = "AGH";
+    public static String nazwaUczelni = "Politechnika";
 
     public void przedstawSie () {
         System.out.println("Nazywam sie " + imie+" "+nazwisko);
@@ -23,5 +23,8 @@ public class Student {
     }
 
 
+    public static void infoUczelnia(){
+        System.out.println("Moja uczelnia to " + nazwaUczelni);
+    }
 
 }
