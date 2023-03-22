@@ -1,4 +1,6 @@
-public class ChromeDriver implements WebDriver{
+package drivers;
+
+public class ChromeDriver implements WebDriver {
 
 
     @Override
