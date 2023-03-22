@@ -24,7 +24,7 @@ public class WebDriverTest {
         if (name.equals("chrome")) {
             return new ChromeDriver();
         } else if (name.equals("firefox")) {
-            return new FriefoxDriver();
+            return new FirefoxDriver();
         } return null;
 
     }
