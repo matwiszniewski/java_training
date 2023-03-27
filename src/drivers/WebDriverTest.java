@@ -3,7 +3,14 @@ package drivers;
 public class WebDriverTest {
 
     public static void main(String[] args)  {
-        WebDriver driver = getDriver(DriverType.FIREFOX);
+
+        DriverType[] driverTypes = DriverType.values();
+        for (int i=0; i < driverTypes.length; i++) {
+            System.out.println(driverTypes[i].name);
+            System.out.println(driverTypes[i].path);
+        }
+
+        WebDriver driver = getDriver(DriverType.CHROME);
         driver.get();
         driver.findElementBy();
         driver.findElementBy();
@@ -21,10 +28,12 @@ public class WebDriverTest {
 }
 
     private static WebDriver getDriver(DriverType type)  {
-        if (type==DriverType.CHROME) {
+        if (type.name.equals("chrome")) {
+            System.out.println(type.path);
             return new ChromeDriver();
         }
-            return new FirefoxDriver();
+        System.out.println(type.path);
+        return new FirefoxDriver();
 
 
     }
